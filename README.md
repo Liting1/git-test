@@ -70,7 +70,25 @@
 + git remote remove 远程仓库的名字
 	- 删除远程仓库的关联
 
-+ git diff  显示当前版本和上一个版本修改的内容
++ git diff
+	- 显示当前版本和上一个版本修改的内容
+
++ git log
+	- 可以查看提交的历史记录，以便要回退到哪个版本
+
++ git log --pretty=oneline
+	- 修改显示历史记录的格式
+
++ git reflog
+	- 查看命令历史，以便要确定回到未来的哪个版本
+
++ git reset --hard "指定版本的commit id"
+	- 调整到指定的版本去
++ git reset --hard HEAD^
+	- 回到上一个版本
+
+
+
 
 
 + git clone 需要克隆的项目地址
