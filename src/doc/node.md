@@ -125,6 +125,48 @@
 30. fs.fchmodSync(fd, mode) 同步方法
 31. fs.rename(oldpath,newpath,callback) 移动文件或目录, 当移动后的路径与原路径为同一路径，而移动的文件或目录名与源文件名或目录名不同时则执行文件或目录的重命名 参数(移动前的路径, 移动后的路径, 回调函数->参数[err])
 
+32. fs.link(srcpath, dstpath, callback) 创建文件的硬链接, 参数(需要被指定创建硬链接的文件路径及完整名字, 创建硬链接的路径及完整名字, 回调函数->参数[err])
+33. fs.linkSync(srcpath, dstpath) 同步方法
+
+34. fs.unlink(path, callback) 删除文件的硬链接(可以用来删除文件), 参数(需要删除硬链接完整路径及文件名, 回调函数->参数[err])
+35. fs.unlinkSync(path) 同步方法
+
+36. fs.symlink(srcpath, dstpath, [type], callback) 创建文件或文件夹的符号链接(其实就是创建快捷方式), 参数(需要被创建符号链接的文件或文件夹, 创建文件或文件夹的的名字, 可选参数(file表示时文件,dir表示时目录), 回调函数->[err])
+37. fs.symlinkSync(srcpath, dstpath, [type]) 同步方法
+38. fs.readlink(path,callback) 读取符号链接中的文件或目录, 参数(符号路径, 回调函数->[err, linkString])
+39. fs.truncate(filename,len,callback) 文件的截断, 参数(需要截断的文件名及完整路径, 截断后的文件长度, 回调函数->[err])
+40. fs.truncateSync(filename,len) 同步方法
+
+41. fs.ftruncate(fd,len,callback) 当使用open或openSync方法打开文件时使用文件的描述符进行文件的截断, 参数(文件的描述符, 截断后的文件的长度, 回调函数->[err])
+42. fs.ftruncateSync(fd,len) 同步方法
+43. fs.rmdir(path, callback) 删除空目录, 参数(目录路径, 回调函数->[err])
+44. fs.rmdirSync(path) 同步方法
+45. fs.watchFile(filename, [option], listener) 监视文件或目录 参数(需要监视的文件或文件夹, 配置对象{interval: num(表示每隔多少时间查看一次),persistent: bool(表示是否执行完程序就结束监听)}, 文件改动后出发的函数->[curr改动之前的文件状态信息对象(stats), prev改动之后的文件状态信息对象(stats)])
+46. fs.unwatchFile(filename, [listener]) 取消监视文件需要执行的函数, 参数(监视的文件名, 监视文件的执行函数)
+47. fs.watch(filename, [option], [listener]) 监视文件或文件夹, 参数(文件名或文件夹,配置对象, 监听函数->[event, filename]) close() 关闭监听
+
+
+48. fs.createReadStream(path, [option]) 以流的形式读取文件
+	参数(需要读取文件的完整路径及文件名, 配置对象)
+	option: {
+		flags: 用于指定对改文件采取什么操作,默认值为('r'),
+		encoding: 指定使用什么格式编码格式来读取文件,(默认值为null),
+		autoClose: 用于指定是否关闭在读取文件时操作系统内部使用的文件描述符,如果为false则文件读取过程中发生错误或者读取完成也不会关闭,如果为true则相反会关闭读取,默认值为(true),
+		start: 使用整数来指定文件的开始读取位置(单位字节数),
+		end: 使用整数来指定文件的结束读取位置(单位字节数)
+	}
+	以流形式读取文件所触发的事件
+	open: 开始读取文件
+	data: 读取到的数据
+	end: 文件读取完毕
+	error: 文件读取错误
+	close: 文件被概关闭
+
+49. fs.createWriteStream(path,[option]) 以流的形式写入文件
+
+
+
+
 ## 四、path模块的方法
 
 1. path.normalize(url); 将一个非标准的url路径转换为一个标准的路径 参数(路径名)

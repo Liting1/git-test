@@ -1,0 +1,21 @@
+/* 
+	20: 00：00; 修改文件
+	max-age: 20 000; 20s
+	// 只与上一次请求的时间有关
+	那么只有 在20：00：20 ~ 20：00：20 ->20秒内的请求都会被拒绝
+*/
+body {
+	background-color: #ddd;
+	font-size: 12px;
+}
+
+h1 {
+	color: red;
+}
+div {
+	width: 100px;
+	height: 100px;
+	background-color: #000;
+	font-size: 20px;
+	color: white;
+}
