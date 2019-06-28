@@ -373,7 +373,7 @@
 
 ```
 
-3. http请求的请求对象response
+3. http请求的响应对象response
 
 ```js
 	const http = require('http');

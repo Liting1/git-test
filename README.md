@@ -84,10 +84,12 @@
 
 + git reset --hard "指定版本的commit id"
 	- 调整到指定的版本去
+
 + git reset --hard HEAD^
 	- 回到上一个版本
 
-
++ git reset --merge
+	- 回退到 git pull 冲突之前的版本
 + git branch
 	- 查看本地分支
 
@@ -104,27 +106,27 @@
 + git clone 需要克隆的项目地址
 	- 将存储库克隆到新目录中
 
++ git pull
+	- 默认是使远程的主分支与当前所在分支合并
 
++ git pull origin next:master
+	- 使远程的next分支与本地的主分支进行合并
+
++ git pull origin next
+	- 使远程的next分支与当前所在的分支进行合并
+
++ git push origin master
+	- 将本地的master分支推送到远程的master分支上，如果远程分支不存在则会创建远程
+
++ git push origin --delete master 
+	- 将远程的 master 分支删除
+
++ git push -u origin master 
+	-将本地的master分支推送到远程的master分支，同时设置默认的主机origin，以后git push时就不用加参数了
 
 
 + ssh-keygen -t rsa -C
 	- 生成本地 SSH 密钥
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
