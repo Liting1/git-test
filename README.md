@@ -27,7 +27,6 @@
 
 
 
-
 #### github 创建远程仓库
 
 1. 注册完成之后登陆github
@@ -125,8 +124,34 @@
 	-将本地的master分支推送到远程的master分支，同时设置默认的主机origin，以后git push时就不用加参数了
 
 
-+ ssh-keygen -t rsa -C
+#### 在本地创建ssh key
+
+1. 在git 客户端输入命令
+	+ ssh-keygen -t rsa -C
 	- 生成本地 SSH 密钥
+	- 然后一直回车使用默认值
+	- 最后就会在 `C:\Users\Administrator\.ssh` 路径下看到如下两个文件
+	![](./src/img/05.png);
+
+2. 用记事本打开id_rsa.pub 文件,复制其中的内容
+
+
+3. 回到GitHub网站 点击设置
+
+	![](./src/img/06.png)
+
+4. 选择 SSH and GPG keys
+	
+	![](./src/img/07.png)
+
+5. 新创建一个SSH key
+
+	![](./src/img/08.png)
+
+6. 把之前的id_rsa.pub文件中复制的内容粘贴到 key 里面,title 可以随意填写
+	
+	![](./src/img/09.png)
+
 
 
 
