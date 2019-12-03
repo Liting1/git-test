@@ -1,0 +1,1124 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-anchor;
+  src: url(https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.woff) format('woff');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #333;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body input {
+  font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+  color: #4078c0;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body hr:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+  font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+  opacity: 0;
+}
+
+.markdown-body .octicon {
+  font: normal normal normal 16px/1 octicons-anchor;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+  content: '\f05c';
+}
+
+.markdown-body:before {
+  display: table;
+  content: "";
+}
+
+.markdown-body:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body .anchor {
+  display: inline-block;
+  padding-right: 2px;
+  margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #000;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+  line-height: 1;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+  line-height: 1.2;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body h6 .anchor {
+  line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  box-sizing: content-box;
+  background-color: #fff;
+}
+
+.markdown-body code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font-size: 11px;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .pl-c {
+  color: #969896;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #0086b3;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #795da3;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #333;
+}
+
+.markdown-body .pl-ent {
+  color: #63a35c;
+}
+
+.markdown-body .pl-k {
+  color: #a71d5d;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #183691;
+}
+
+.markdown-body .pl-v {
+  color: #ed6a43;
+}
+
+.markdown-body .pl-id {
+  color: #b52a1d;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b52a1d;
+  color: #f8f8f8;
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #63a35c;
+  font-weight: bold;
+}
+
+.markdown-body .pl-ml {
+  color: #693a17;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #1d3e81;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mq {
+  color: #008080;
+}
+
+.markdown-body .pl-mi {
+  color: #333;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #333;
+  font-weight: bold;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.markdown-body .pl-mdr {
+  color: #795da3;
+  font-weight: bold;
+}
+
+.markdown-body .pl-mo {
+  color: #1d3e81;
+}
+
+.markdown-body kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  color: #555;
+  vertical-align: middle;
+  background-color: #fcfcfc;
+  border: solid 1px #ccc;
+  border-bottom-color: #bbb;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #bbb;
+}
+
+.markdown-body .plan-price-unit {
+  color: #767676;
+  font-weight: normal;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 0.35em 0.25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body .plan-choice {
+  padding: 15px;
+  padding-left: 40px;
+  display: block;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  font-weight: normal;
+  background-color: #fafafa;
+}
+
+.markdown-body .plan-choice.open {
+  background-color: #fff;
+}
+
+.markdown-body .plan-choice.open .plan-choice-seat-breakdown {
+  display: block;
+}
+
+.markdown-body .plan-choice-free {
+  border-radius: 3px 3px 0 0;
+}
+
+.markdown-body .plan-choice-paid {
+  border-radius: 0 0 3px 3px;
+  border-top: 0;
+  margin-bottom: 20px;
+}
+
+.markdown-body .plan-choice-radio {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+}
+
+.markdown-body .plan-choice-exp {
+  color: #999;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.markdown-body .plan-choice-seat-breakdown {
+  margin-top: 10px;
+  display: none;
+}
+
+.markdown-body :checked+.radio-label {
+  z-index: 1;
+  position: relative;
+  border-color: #4078c0;
+}
+
+@media print {
+  body .markdown-body {
+    padding: 0;
+    border: none;
+  }
+}
+</style><title>README</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-git-入门" class="anchor" href="#git-%E5%85%A5%E9%97%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git 入门</h1>
+<h2>
+<a id="user-content-git客户端下载" class="anchor" href="#git%E5%AE%A2%E6%88%B7%E7%AB%AF%E4%B8%8B%E8%BD%BD" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git客户端下载</h2>
+<p><a href="https://git-scm.com/downloads" rel="nofollow">下载地址</a> 选择你对应的系统版本，傻瓜式安装(一直点下一步就行)</p>
+<blockquote>
+<p>注意最好不要安装在中文目录下面！！！</p>
+</blockquote>
+<h2>
+<a id="user-content-注册github账号" class="anchor" href="#%E6%B3%A8%E5%86%8Cgithub%E8%B4%A6%E5%8F%B7" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>注册github账号</h2>
+<p><a href="https://github.com/">注册地址</a> 注册一个账号，这个账号以后会经常使用，不要忘记密码了</p>
+<h3>
+<a id="user-content-git客户端命令的使用" class="anchor" href="#git%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%91%BD%E4%BB%A4%E7%9A%84%E4%BD%BF%E7%94%A8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git客户端命令的使用</h3>
+<h4>
+<a id="user-content-第一次使用之前配置用户信息" class="anchor" href="#%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8%E4%B9%8B%E5%89%8D%E9%85%8D%E7%BD%AE%E7%94%A8%E6%88%B7%E4%BF%A1%E6%81%AF" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>第一次使用之前配置用户信息</h4>
+<pre><code>	git config --global user.name "你的用户名"
+	git config --global user.email "你的邮箱地址"
+</code></pre>
+<blockquote>
+<p>说明： git config 为配置的命令，--global 为全局配置 配置的选项 配置的值</p>
+</blockquote>
+<ul>
+<li>
+<p>配置完成之后使用 <code>git config --list</code>命令查看配置信息</p>
+</li>
+<li>
+<p>如果配置是配置字段打错字了可以使用<code>git config --global --unset 对应添加的字段名</code> 来删除对应的字段</p>
+</li>
+</ul>
+<h4>
+<a id="user-content-github-创建远程仓库" class="anchor" href="#github-%E5%88%9B%E5%BB%BA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>github 创建远程仓库</h4>
+<ol>
+<li>注册完成之后登陆github</li>
+</ol>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/01.PNG" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/01.PNG" alt="打开仓库" style="max-width:100%;"></a></p>
+<ol start="2">
+<li>
+<p>点击 NEW 创建一个新的仓库
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/02.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/02.png" alt="创建新仓库" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>创建仓库的简单配置
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/03.PNG" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/03.PNG" alt="配置" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>创建完毕
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/04.PNG" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/04.PNG" alt="ok" style="max-width:100%;"></a></p>
+</li>
+</ol>
+<h4>
+<a id="user-content-使用克隆的方式将本地仓库推送到远程仓库" class="anchor" href="#%E4%BD%BF%E7%94%A8%E5%85%8B%E9%9A%86%E7%9A%84%E6%96%B9%E5%BC%8F%E5%B0%86%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E6%8E%A8%E9%80%81%E5%88%B0%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>使用克隆的方式将本地仓库推送到远程仓库</h4>
+<ol>
+<li>
+<p>克隆远程仓库到本地，复制远程仓库地址。</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/10.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/10.png" alt="复制地址" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>在本地电脑的桌面鼠标右键选择<code>Git Bash Here</code>, 将会弹出一个黑窗口。</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/11.gif" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/11.gif" alt="桌面" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>在黑窗口里面输入 <code>git clone 复制的仓库地址</code> 然后回车运行命令</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/12.gif" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/12.gif" alt="ttxt" style="max-width:100%;"></a></p>
+</li>
+</ol>
+<blockquote>
+<p>注意： 不要忘记之间的空格！！！<br>
+注意： 第一次安装使用一定要配置用户信息！！！</p>
+</blockquote>
+<ol start="4">
+<li>
+<p>克隆完毕之后将会在桌面上出现刚刚克隆下来仓库的文件夹</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/13.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/13.png" alt="文件夹" style="max-width:100%;"></a></p>
+</li>
+</ol>
+<blockquote>
+<p>新生成的文件夹名字和仓库的名字一样</p>
+</blockquote>
+<ol start="5">
+<li>
+<p>在克隆的文件夹中添加需要提交到远程仓库的文件</p>
+<ul>
+<li>在克隆文件夹中添加需要提交的文件
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/15.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/15.png" alt="txt" style="max-width:100%;"></a>
+</li>
+</ul>
+<blockquote>
+<p>注意： 该文件夹中的<code>.git</code>文件夹不能删除(默认该文件夹为隐藏文件夹)，不能够提交空的文件夹</p>
+</blockquote>
+<ul>
+<li>
+<p>使用 cd 命令进入克隆后的文件夹 <code>cd 文件加名称</code>
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/14.gif" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/14.gif" alt="txt" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>然后输入一下命令</p>
+<ul>
+<li>
+<code>git add .</code>;</li>
+<li>
+<code>git commit -m "提交说明"</code>, 如果第一次使用时没有设置用户信息那么将会有如下提示内容出现;
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/16.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/16.png" alt="txt" style="max-width:100%;"></a>
+</li>
+<li>
+<code>git push origin master</code>, 如果没有设置 ssh key 那么 <strong>每次提交的时候都需要输入gihub账号和密码</strong>;
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/17.gif" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/17.gif" alt="txt" style="max-width:100%;"></a>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>由于我设置 ssh key 所以在提交的时候不需要输入密码(设置ssh key 见下方ssh key设置)</p>
+</blockquote>
+</li>
+<li>
+<p>此时已经提交完毕回到远程仓库查看提交的信息
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/18.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/18.png" alt="txt" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>以后提交文件重复步骤5即可</p>
+</li>
+</ol>
+<h4>
+<a id="user-content-设置仓库为github静态页面" class="anchor" href="#%E8%AE%BE%E7%BD%AE%E4%BB%93%E5%BA%93%E4%B8%BAgithub%E9%9D%99%E6%80%81%E9%A1%B5%E9%9D%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>设置仓库为github静态页面</h4>
+<ol>
+<li>
+<p>点击仓库的设置选项
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/19.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/19.png" alt="txt" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>在设置页面下方找到 GitHub Pages 模块, 对source选项进行修改
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/20.gif" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/20.gif" alt="txt" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>修改完毕之后将会生成仓库静态文件的地址为 <code>https://github用户名.github.io/仓库名</code> ==&gt; <a href="https://liting1.github.io/abc" rel="nofollow">https://liting1.github.io/abc</a></p>
+</li>
+<li>
+<p>访问仓库内的静态文件</p>
+<ul>
+<li>使用仓库地址加仓库内的文件的相对路径
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/21.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/21.png" alt="txt" style="max-width:100%;"></a>
+</li>
+</ul>
+</li>
+</ol>
+<h4>
+<a id="user-content-本地仓库的创建" class="anchor" href="#%E6%9C%AC%E5%9C%B0%E4%BB%93%E5%BA%93%E7%9A%84%E5%88%9B%E5%BB%BA" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>本地仓库的创建</h4>
+<ul>
+<li>
+<p>在电脑上新建一个文件夹，在文件中鼠标右键选择Git Bash here</p>
+</li>
+<li>
+<p>git init</p>
+<ul>
+<li>创建一个空的Git存储库或重新初始化现有存储库</li>
+<li>会在项目目录下创建一个隐藏的 .git文件</li>
+</ul>
+</li>
+<li>
+<p>git add . 将文件内容添加到索引中(跟踪当前目录下文件)</p>
+<ul>
+<li>常用的选项 . 表示将此目录下的所有文件添加到索引中</li>
+<li>后面使用目录下的 完整路径及文件名 表示添加单个索引文件</li>
+</ul>
+</li>
+<li>
+<p>git status</p>
+<ul>
+<li>显示工作树状态</li>
+</ul>
+</li>
+<li>
+<p>git commit -m '更改说明'</p>
+<ul>
+<li>记录对存储库的更改(将暂存区里的改动给提交到本地的版本库)</li>
+</ul>
+</li>
+<li>
+<p>git remote -v</p>
+<ul>
+<li>查看关联的远程仓库的详细信息</li>
+</ul>
+</li>
+<li>
+<p>git remote add origin 地址</p>
+<ul>
+<li>添加远程仓库的关联</li>
+</ul>
+</li>
+<li>
+<p>git remote remove 远程仓库的名字</p>
+<ul>
+<li>删除远程仓库的关联</li>
+</ul>
+</li>
+<li>
+<p>git diff</p>
+<ul>
+<li>显示当前版本和上一个版本修改的内容</li>
+</ul>
+</li>
+<li>
+<p>git log</p>
+<ul>
+<li>可以查看提交的历史记录，以便要回退到哪个版本</li>
+</ul>
+</li>
+<li>
+<p>git log --pretty=oneline</p>
+<ul>
+<li>修改显示历史记录的格式</li>
+</ul>
+</li>
+<li>
+<p>git reflog</p>
+<ul>
+<li>查看命令历史，以便要确定回到未来的哪个版本</li>
+</ul>
+</li>
+<li>
+<p>git reset --hard "指定版本的commit id"</p>
+<ul>
+<li>调整到指定的版本去</li>
+</ul>
+</li>
+<li>
+<p>git reset --hard HEAD^</p>
+<ul>
+<li>回到上一个版本</li>
+</ul>
+</li>
+<li>
+<p>git reset --merge</p>
+<ul>
+<li>回退到 git pull 冲突之前的版本</li>
+</ul>
+</li>
+<li>
+<p>git branch</p>
+<ul>
+<li>查看本地分支</li>
+</ul>
+</li>
+<li>
+<p>git branch 分支名称</p>
+<ul>
+<li>创建本地分支</li>
+</ul>
+</li>
+<li>
+<p>git checkout 分支名称</p>
+<ul>
+<li>切换的指定的分支</li>
+</ul>
+</li>
+<li>
+<p>git merge 分支的名称</p>
+<ul>
+<li>合并分支</li>
+<li>在需要合并目标分支之前先切换到需要合并的分支上</li>
+</ul>
+</li>
+<li>
+<p>git clone 需要克隆的项目地址</p>
+<ul>
+<li>将存储库克隆到新目录中</li>
+</ul>
+</li>
+<li>
+<p>git pull</p>
+<ul>
+<li>默认是使远程的主分支与当前所在分支合并</li>
+</ul>
+</li>
+<li>
+<p>git pull origin next:master</p>
+<ul>
+<li>使远程的next分支与本地的主分支进行合并</li>
+</ul>
+</li>
+<li>
+<p>git pull origin next</p>
+<ul>
+<li>使远程的next分支与当前所在的分支进行合并</li>
+</ul>
+</li>
+<li>
+<p>git push origin master</p>
+<ul>
+<li>将本地的master分支推送到远程的master分支上，如果远程分支不存在则会创建远程</li>
+</ul>
+</li>
+<li>
+<p>git push origin --delete master</p>
+<ul>
+<li>将远程的 master 分支删除</li>
+</ul>
+</li>
+<li>
+<p>git push -u origin master
+-将本地的master分支推送到远程的master分支，同时设置默认的主机origin，以后git push时就不用加参数了</p>
+</li>
+</ul>
+<h4>
+<a id="user-content-在本地创建ssh-key" class="anchor" href="#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BAssh-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>在本地创建ssh key</h4>
+<ol>
+<li>
+<p>在git 客户端输入命令</p>
+<ul>
+<li>ssh-keygen -t rsa -C</li>
+</ul>
+<ul>
+<li>生成本地 SSH 密钥</li>
+<li>然后一直回车使用默认值</li>
+<li>最后就会在 <code>C:\Users\Administrator\.ssh</code> 路径下看到如下两个文件
+<a href="///C://Users/liting/Desktop/web/git-test/src/img/05.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/05.png" alt="" style="max-width:100%;"></a>;</li>
+</ul>
+</li>
+<li>
+<p>用记事本打开id_rsa.pub 文件,复制其中的内容</p>
+</li>
+<li>
+<p>回到GitHub网站 点击设置</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/06.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/06.png" alt="" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>选择 SSH and GPG keys</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/07.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/07.png" alt="" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>新创建一个SSH key</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/08.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/08.png" alt="" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>把之前的id_rsa.pub文件中复制的内容粘贴到 key 里面,title 可以随意填写</p>
+<p><a href="///C://Users/liting/Desktop/web/git-test/src/img/09.png" target="_blank" rel="noopener noreferrer"><img src="///C://Users/liting/Desktop/web/git-test/src/img/09.png" alt="" style="max-width:100%;"></a></p>
+</li>
+<li>
+<p>以后提交远程仓库就不需要输入密码。而且还可以使用 ssh 方式克隆远程地址</p>
+</li>
+</ol>
+<h4>
+<a id="user-content-git-常用命令" class="anchor" href="#git-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>git 常用命令</h4>
+<ol>
+<li>
+<p>git clone 'github路径'  ==&gt; 克隆GitHub上的一个项目</p>
+</li>
+<li>
+<p>git init ==&gt; 把当前目录变成Git可以管理的仓库</p>
+</li>
+<li>
+<p>git add "文件名"/ .  ==&gt; 需要添加到仓库的文件 / 如果是一个点那么久代表添加所有文件</p>
+</li>
+<li>
+<p>git commit -m "提交文件的描述信息" ==&gt; 把文件提交到仓库</p>
+</li>
+<li>
+<p>git log ==&gt; 可以查看提交的历史记录，以便要回退到哪个版本</p>
+</li>
+<li>
+<p>git log --pretty=oneline ==&gt; 修改显示历史记录的格式</p>
+</li>
+<li>
+<p>git reflog ==&gt; 查看命令历史，以便要确定回到未来的哪个版本</p>
+</li>
+<li>
+<p>cat "文件名" ==&gt; 浏览对应得文件</p>
+</li>
+<li>
+<p>git reset --hard "指定版本的commit id" ==&gt; 调整到指定的版本去</p>
+</li>
+<li>
+<p>git reset --hard HEAD^ ==&gt; 回到上一个版本</p>
+</li>
+<li>
+<p>git status ==&gt; 查看仓库的当前状态</p>
+</li>
+<li>
+<p>git diff ==&gt; 显示当前版本和上一个版本修改的内容</p>
+</li>
+<li>
+<p>git mv old文件名 new文件名  ==&gt; 修改指定的文件名</p>
+</li>
+<li>
+<p>git remote add origin '你的远程库地址' ==&gt; 光联到远程库</p>
+</li>
+<li>
+<p>git pull --rebase origin master ==&gt; 获取远程库于本地同步合并</p>
+</li>
+<li>
+<p>git push -u origin master ==&gt; 把本地库的内容推送到远程</p>
+</li>
+</ol>
+</article></body></html>

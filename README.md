@@ -92,6 +92,21 @@
 7. 以后提交文件重复步骤5即可
 
 
+#### 设置仓库为github静态页面
+
+1. 点击仓库的设置选项
+	![txt](./src/img/19.png)
+
+2. 在设置页面下方找到 GitHub Pages 模块, 对source选项进行修改
+	![txt](./src/img/20.gif)
+
+3. 修改完毕之后将会生成仓库静态文件的地址为 `https://github用户名.github.io/仓库名` ==> https://liting1.github.io/abc
+
+4. 访问仓库内的静态文件
+	- 使用仓库地址加仓库内的文件的相对路径
+	![txt](./src/img/21.png)
+
+
 #### 本地仓库的创建
 
 + 在电脑上新建一个文件夹，在文件中鼠标右键选择Git Bash here
