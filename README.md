@@ -3,14 +3,14 @@
 
 ## git客户端下载
 
-[下载地址](https://git-scm.com/downloads) 傻瓜式安装
+[下载地址](https://git-scm.com/downloads) 选择你对应的系统版本，傻瓜式安装(一直点下一步就行)
 
 ## 注册github账号
 
-[注册地址](https://github.com/)
+[注册地址](https://github.com/) 注册一个账号，这个账号以后会经常使用，不要忘记密码了
 
 
-### git命令的使用
+### git客户命令的使用
 
 #### 第一次使用之前配置用户信息
 
