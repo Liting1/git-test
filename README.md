@@ -11,6 +11,7 @@
 
 [注册地址](https://github.com/) 注册一个账号，这个账号以后会经常使用，不要忘记密码了
 
+> 账号注册完毕之后需要进行邮箱验证通过
 
 ### git客户端命令的使用
 
@@ -20,6 +21,8 @@
 	git config --global user.name "你的用户名"
 	git config --global user.email "你的邮箱地址"
 ```
+
+![txt](./src/img/00.gif)
 
 > 说明： git config 为配置的命令，--global 为全局配置 配置的选项 配置的值
 
@@ -154,6 +157,7 @@
 
 + git reset --merge
 	- 回退到 git pull 冲突之前的版本
+	
 + git branch
 	- 查看本地分支
 
