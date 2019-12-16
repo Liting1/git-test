@@ -21,7 +21,7 @@
 	git config --global user.name "你的用户名"
 	git config --global user.email "你的邮箱地址"
 ```
-
+#### 在桌面或者文件夹里任意位置鼠标右键菜单选择`Git Bash Here`出现如下窗口
 ![txt](./src/img/00.gif)
 
 > 说明： git config 为配置的命令，--global 为全局配置 配置的选项 配置的值
@@ -222,7 +222,6 @@
 	![](./src/img/09.png)
 
 7. 以后提交远程仓库就不需要输入密码。而且还可以使用 ssh 方式克隆远程地址
-
 
 
 
