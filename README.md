@@ -192,11 +192,14 @@
 + git push -u origin master 
 	-将本地的master分支推送到远程的master分支，同时设置默认的主机origin，以后git push时就不用加参数了
 
++ git push origin master:dev
+	- 将本地的master分支推送到远程的dev分支，用于将本地指定分支的内容提交到远程指定的分支
+
 
 #### 在本地创建ssh key
 
 1. 在git 客户端输入命令
-	+ ssh-keygen -t rsa -C
+	+ ssh-keygen -t rsa -C "邮箱地址"
 	- 生成本地 SSH 密钥
 	- 然后一直回车使用默认值
 	- 最后就会在 `C:\Users\Administrator\.ssh` 路径下看到如下两个文件

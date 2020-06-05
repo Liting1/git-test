@@ -1036,6 +1036,12 @@ pre {
 <p>git push -u origin master
 -将本地的master分支推送到远程的master分支，同时设置默认的主机origin，以后git push时就不用加参数了</p>
 </li>
+<li>
+<p>git push origin master:dev</p>
+<ul>
+<li>将本地的master分支推送到远程的dev分支，用于将本地指定分支的内容提交到远程指定的分支</li>
+</ul>
+</li>
 </ul>
 <h4>
 <a id="user-content-在本地创建ssh-key" class="anchor" href="#%E5%9C%A8%E6%9C%AC%E5%9C%B0%E5%88%9B%E5%BB%BAssh-key" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>在本地创建ssh key</h4>
@@ -1043,7 +1049,7 @@ pre {
 <li>
 <p>在git 客户端输入命令</p>
 <ul>
-<li>ssh-keygen -t rsa -C</li>
+<li>ssh-keygen -t rsa -C "邮箱地址"</li>
 </ul>
 <ul>
 <li>生成本地 SSH 密钥</li>
