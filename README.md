@@ -150,14 +150,23 @@
 	- 查看命令历史，以便要确定回到未来的哪个版本
 
 + git reset --hard "指定版本的commit id"
-	- 调整到指定的版本去
+	- 调整到指定的版本去，回到指定版本之后无法再回去
 
 + git reset --hard HEAD^
-	- 回到上一个版本
+	- 回到上一个版本，回到上一个版本之后无法回去
+
++ git reset HEAD .
+	- 撤回所有提交到暂存区的文件
+
++ git reset HEAD 文件名
+	- 撤回提交到暂存区的指定文件
 
 + git reset --merge
 	- 回退到 git pull 冲突之前的版本
-	
+
++ git revert "指定版本的commit id"
+	- 回退到该版本之前的一个版本并做为一个新的版本存在，之前的版本依然存在
+
 + git branch
 	- 查看本地分支
 
@@ -166,6 +175,12 @@
 
 + git checkout 分支名称
 	- 切换的指定的分支
+
++ git checkout -- 文件名
+	- 移除添加到缓存区的指定文件
+
++ git checkout -- .
+	- 移除添加到缓存区的所有文件
 
 + git merge 分支的名称
 	- 合并分支

@@ -956,19 +956,37 @@ pre {
 <li>
 <p>git reset --hard "指定版本的commit id"</p>
 <ul>
-<li>调整到指定的版本去</li>
+<li>调整到指定的版本去，回到指定版本之后无法再回去</li>
 </ul>
 </li>
 <li>
 <p>git reset --hard HEAD^</p>
 <ul>
-<li>回到上一个版本</li>
+<li>回到上一个版本，回到上一个版本之后无法回去</li>
+</ul>
+</li>
+<li>
+<p>git reset HEAD .</p>
+<ul>
+<li>撤回所有提交到暂存区的文件</li>
+</ul>
+</li>
+<li>
+<p>git reset HEAD 文件名</p>
+<ul>
+<li>撤回提交到暂存区的指定文件</li>
 </ul>
 </li>
 <li>
 <p>git reset --merge</p>
 <ul>
 <li>回退到 git pull 冲突之前的版本</li>
+</ul>
+</li>
+<li>
+<p>git revert "指定版本的commit id"</p>
+<ul>
+<li>回退到该版本之前的一个版本并做为一个新的版本存在，之前的版本依然存在</li>
 </ul>
 </li>
 <li>
@@ -987,6 +1005,18 @@ pre {
 <p>git checkout 分支名称</p>
 <ul>
 <li>切换的指定的分支</li>
+</ul>
+</li>
+<li>
+<p>git checkout -- 文件名</p>
+<ul>
+<li>移除添加到缓存区的指定文件</li>
+</ul>
+</li>
+<li>
+<p>git checkout -- .</p>
+<ul>
+<li>移除添加到缓存区的所有文件</li>
 </ul>
 </li>
 <li>
